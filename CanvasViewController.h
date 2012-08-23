@@ -11,4 +11,6 @@
 
 @interface CanvasViewController : UIViewController
 - (IBAction)changeMode:(id)sender;
+- (IBAction)reset:(id)sender;
+- (IBAction)undo:(id)sender;
 @end

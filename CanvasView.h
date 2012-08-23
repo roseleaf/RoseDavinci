@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Drawable.h"
 
 @interface CanvasView : UIView
 typedef enum {
@@ -16,5 +17,7 @@ typedef enum {
     TRIANGLE_MODE
 } Mode;
 @property Mode currentMode;
+@property (strong)NSMutableArray* completedDrawables;
+@property (strong)id<Drawable> currentDrawable;
 
 @end

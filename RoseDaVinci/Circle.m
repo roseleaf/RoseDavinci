@@ -9,7 +9,7 @@
 #import "Circle.h"
 @interface Circle ()
 -(CGFloat) distanceBetweenPoint1andPoint2;
--(CGPoint)midpointFromPoint1andPoint2;
+-(CGPoint) midpointFromPoint1andPoint2;
 @end
 
 @implementation Circle

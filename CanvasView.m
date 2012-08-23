@@ -13,12 +13,7 @@
 
 @interface CanvasView ()
 
-@property (strong)id<Drawable> currentDrawable;
-@property (strong)NSMutableArray* completedDrawables;
-
 @end
-
-
 
 @implementation CanvasView
 
@@ -43,7 +38,9 @@
     [[UIColor blackColor]setStroke];
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
-    [self.currentDrawable draw:ctx];
+    if (self.currentDrawable){
+        [self.currentDrawable draw:ctx];
+    }
     
     for (id<Drawable> d in self.completedDrawables){
         [d draw:ctx];
@@ -69,6 +66,7 @@
 //    newLine.startpoint = self.startpoint;
 //    newLine.endpoint = self.endpoint;
     [self.completedDrawables addObject:currentDrawable];
+    self.currentDrawable = nil;
     [self setNeedsDisplay];
     
 }

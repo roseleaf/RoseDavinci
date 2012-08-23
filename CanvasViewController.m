@@ -65,4 +65,17 @@
         self.canvasview.multipleTouchEnabled = YES;
     }
 }
+
+- (IBAction)reset:(id)sender {
+    self.canvasview.completedDrawables = [[NSMutableArray alloc]init];
+    self.canvasview.currentDrawable = nil;
+    [self.canvasview setNeedsDisplay];
+}
+
+- (IBAction)undo:(id)sender {
+    if ([self.canvasview.completedDrawables count] > 0) {
+        [self.canvasview.completedDrawables removeLastObject];
+        [self.canvasview setNeedsDisplay];
+    }
+}
 @end
