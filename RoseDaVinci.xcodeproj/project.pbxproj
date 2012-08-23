@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96FD7A6415E45D960061A49B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FD7A6315E45D960061A49B /* UIKit.framework */; };
+		96FD7A6615E45D960061A49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FD7A6515E45D960061A49B /* Foundation.framework */; };
+		96FD7A6815E45D960061A49B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FD7A6715E45D960061A49B /* CoreGraphics.framework */; };
+		96FD7A6E15E45D960061A49B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96FD7A6C15E45D960061A49B /* InfoPlist.strings */; };
+		96FD7A7015E45D960061A49B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FD7A6F15E45D960061A49B /* main.m */; };
+		96FD7A7415E45D960061A49B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FD7A7315E45D960061A49B /* AppDelegate.m */; };
+		96FD7A7C15E45DE00061A49B /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FD7A7B15E45DE00061A49B /* CanvasView.m */; };
+		96FD7A8015E45DF70061A49B /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FD7A7E15E45DF70061A49B /* CanvasViewController.m */; };
+		96FD7A8115E45DF70061A49B /* CanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96FD7A7F15E45DF70061A49B /* CanvasViewController.xib */; };
+		96FD7A8415E466880061A49B /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FD7A8315E466880061A49B /* Line.m */; };
+		96FD7A8B15E58DD00061A49B /* FreeformLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FD7A8A15E58DCF0061A49B /* FreeformLine.m */; };
+		96FD7A9315E5A1AA0061A49B /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FD7A9215E5A1AA0061A49B /* Circle.m */; };
+		96FD7A9515E5A2710061A49B /* File.m in Resources */ = {isa = PBXBuildFile; fileRef = 96FD7A9415E5A2710061A49B /* File.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96FD7A5F15E45D960061A49B /* RoseDaVinci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoseDaVinci.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96FD7A6315E45D960061A49B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96FD7A6515E45D960061A49B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96FD7A6715E45D960061A49B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96FD7A6B15E45D960061A49B /* RoseDaVinci-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoseDaVinci-Info.plist"; sourceTree = "<group>"; };
+		96FD7A6D15E45D960061A49B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96FD7A6F15E45D960061A49B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96FD7A7115E45D960061A49B /* RoseDaVinci-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoseDaVinci-Prefix.pch"; sourceTree = "<group>"; };
+		96FD7A7215E45D960061A49B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		96FD7A7315E45D960061A49B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96FD7A7A15E45DE00061A49B /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CanvasView.h; path = ../CanvasView.h; sourceTree = "<group>"; };
+		96FD7A7B15E45DE00061A49B /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CanvasView.m; path = ../CanvasView.m; sourceTree = "<group>"; };
+		96FD7A7D15E45DF70061A49B /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CanvasViewController.h; path = ../CanvasViewController.h; sourceTree = "<group>"; };
+		96FD7A7E15E45DF70061A49B /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CanvasViewController.m; path = ../CanvasViewController.m; sourceTree = "<group>"; };
+		96FD7A7F15E45DF70061A49B /* CanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CanvasViewController.xib; path = ../CanvasViewController.xib; sourceTree = "<group>"; };
+		96FD7A8215E466880061A49B /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		96FD7A8315E466880061A49B /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		96FD7A8815E56FCB0061A49B /* Drawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Drawable.h; path = ../Drawable.h; sourceTree = "<group>"; };
+		96FD7A8915E58DCF0061A49B /* FreeformLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeformLine.h; sourceTree = "<group>"; };
+		96FD7A8A15E58DCF0061A49B /* FreeformLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeformLine.m; sourceTree = "<group>"; };
+		96FD7A9115E5A1AA0061A49B /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		96FD7A9215E5A1AA0061A49B /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		96FD7A9415E5A2710061A49B /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96FD7A5C15E45D960061A49B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96FD7A6415E45D960061A49B /* UIKit.framework in Frameworks */,
+				96FD7A6615E45D960061A49B /* Foundation.framework in Frameworks */,
+				96FD7A6815E45D960061A49B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96FD7A5415E45D960061A49B = {
+			isa = PBXGroup;
+			children = (
+				96FD7A6915E45D960061A49B /* RoseDaVinci */,
+				96FD7A6215E45D960061A49B /* Frameworks */,
+				96FD7A6015E45D960061A49B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96FD7A6015E45D960061A49B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96FD7A5F15E45D960061A49B /* RoseDaVinci.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96FD7A6215E45D960061A49B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96FD7A6315E45D960061A49B /* UIKit.framework */,
+				96FD7A6515E45D960061A49B /* Foundation.framework */,
+				96FD7A6715E45D960061A49B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96FD7A6915E45D960061A49B /* RoseDaVinci */ = {
+			isa = PBXGroup;
+			children = (
+				96FD7A8C15E58DF10061A49B /* Drawables */,
+				96FD7A7A15E45DE00061A49B /* CanvasView.h */,
+				96FD7A7B15E45DE00061A49B /* CanvasView.m */,
+				96FD7A7D15E45DF70061A49B /* CanvasViewController.h */,
+				96FD7A7E15E45DF70061A49B /* CanvasViewController.m */,
+				96FD7A7F15E45DF70061A49B /* CanvasViewController.xib */,
+				96FD7A7215E45D960061A49B /* AppDelegate.h */,
+				96FD7A7315E45D960061A49B /* AppDelegate.m */,
+				96FD7A6A15E45D960061A49B /* Supporting Files */,
+			);
+			path = RoseDaVinci;
+			sourceTree = "<group>";
+		};
+		96FD7A6A15E45D960061A49B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96FD7A6B15E45D960061A49B /* RoseDaVinci-Info.plist */,
+				96FD7A6C15E45D960061A49B /* InfoPlist.strings */,
+				96FD7A6F15E45D960061A49B /* main.m */,
+				96FD7A7115E45D960061A49B /* RoseDaVinci-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96FD7A8C15E58DF10061A49B /* Drawables */ = {
+			isa = PBXGroup;
+			children = (
+				96FD7A8815E56FCB0061A49B /* Drawable.h */,
+				96FD7A8915E58DCF0061A49B /* FreeformLine.h */,
+				96FD7A8A15E58DCF0061A49B /* FreeformLine.m */,
+				96FD7A9115E5A1AA0061A49B /* Circle.h */,
+				96FD7A9215E5A1AA0061A49B /* Circle.m */,
+				96FD7A9415E5A2710061A49B /* File.m */,
+				96FD7A8215E466880061A49B /* Line.h */,
+				96FD7A8315E466880061A49B /* Line.m */,
+			);
+			name = Drawables;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96FD7A5E15E45D960061A49B /* RoseDaVinci */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96FD7A7715E45D960061A49B /* Build configuration list for PBXNativeTarget "RoseDaVinci" */;
+			buildPhases = (
+				96FD7A5B15E45D960061A49B /* Sources */,
+				96FD7A5C15E45D960061A49B /* Frameworks */,
+				96FD7A5D15E45D960061A49B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoseDaVinci;
+			productName = RoseDaVinci;
+			productReference = 96FD7A5F15E45D960061A49B /* RoseDaVinci.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96FD7A5615E45D960061A49B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Rose CW";
+			};
+			buildConfigurationList = 96FD7A5915E45D960061A49B /* Build configuration list for PBXProject "RoseDaVinci" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 96FD7A5415E45D960061A49B;
+			productRefGroup = 96FD7A6015E45D960061A49B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96FD7A5E15E45D960061A49B /* RoseDaVinci */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96FD7A5D15E45D960061A49B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96FD7A6E15E45D960061A49B /* InfoPlist.strings in Resources */,
+				96FD7A8115E45DF70061A49B /* CanvasViewController.xib in Resources */,
+				96FD7A9515E5A2710061A49B /* File.m in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96FD7A5B15E45D960061A49B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96FD7A7015E45D960061A49B /* main.m in Sources */,
+				96FD7A7415E45D960061A49B /* AppDelegate.m in Sources */,
+				96FD7A7C15E45DE00061A49B /* CanvasView.m in Sources */,
+				96FD7A8015E45DF70061A49B /* CanvasViewController.m in Sources */,
+				96FD7A8415E466880061A49B /* Line.m in Sources */,
+				96FD7A8B15E58DD00061A49B /* FreeformLine.m in Sources */,
+				96FD7A9315E5A1AA0061A49B /* Circle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96FD7A6C15E45D960061A49B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96FD7A6D15E45D960061A49B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96FD7A7515E45D960061A49B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96FD7A7615E45D960061A49B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96FD7A7815E45D960061A49B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoseDaVinci/RoseDaVinci-Prefix.pch";
+				INFOPLIST_FILE = "RoseDaVinci/RoseDaVinci-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		96FD7A7915E45D960061A49B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoseDaVinci/RoseDaVinci-Prefix.pch";
+				INFOPLIST_FILE = "RoseDaVinci/RoseDaVinci-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96FD7A5915E45D960061A49B /* Build configuration list for PBXProject "RoseDaVinci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96FD7A7515E45D960061A49B /* Debug */,
+				96FD7A7615E45D960061A49B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96FD7A7715E45D960061A49B /* Build configuration list for PBXNativeTarget "RoseDaVinci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96FD7A7815E45D960061A49B /* Debug */,
+				96FD7A7915E45D960061A49B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96FD7A5615E45D960061A49B /* Project object */;
+}
